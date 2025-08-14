@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>미니퀴즈 1</title>
+<style>
+body {font-family:system-ui,pretendard,Arial,sans-serif;line-height:1.6;margin:0;background:#fff;color:#222}
+.wrap {max-width:720px;margin:0 auto;padding:18px}
+.quiz {background:#f7f7f9;padding:12px 14px;border-radius:10px;margin:14px 0;border:1px solid #eee}
+.quiz h4 {margin:0 0 6px}
+.quiz ul {margin:6px 0 10px 18px}
+.toggle {display:inline-block;cursor:pointer;font-weight:700;padding:6px 10px;border-radius:6px;background:#e9f3ff}
+.answer {display:none;margin-top:10px;background:#eef9f0;padding:10px;border-radius:8px}
+input[type=checkbox] {display:none}
+input[type=checkbox]:checked ~ .answer {display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="quiz">
+    <h4>✅ 미니퀴즈 1</h4>
+    <p><strong>Q.</strong> 실리콘을 반복 마찰이 많은 부품에 적용했을 때 가장 먼저 우려되는 문제는 무엇일까요?</p>
+    <ul>
+      <li>① 표면 마모</li>
+      <li>② 전기 전도성 저하</li>
+      <li>③ 금형 제작 어려움</li>
+      <li>④ 내열성 저하</li>
+    </ul>
+    <input type="checkbox" id="t1">
+    <label class="toggle" for="t1">정답 보기</label>
+    <div class="answer">
+      <p><strong>정답:</strong> ① 표면 마모<br>
+      <em>풀이:</em> 실리콘은 내마모성이 낮아 반복 마찰 시 표면 손상이 빠르게 진행됩니다.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

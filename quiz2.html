@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>미니퀴즈 2</title>
+<style>
+body {font-family:system-ui,pretendard,Arial,sans-serif;line-height:1.6;margin:0;background:#fff;color:#222}
+.wrap {max-width:720px;margin:0 auto;padding:18px}
+.quiz {background:#f7f7f9;padding:12px 14px;border-radius:10px;margin:14px 0;border:1px solid #eee}
+.quiz h4 {margin:0 0 6px}
+.quiz ul {margin:6px 0 10px 18px}
+.toggle {display:inline-block;cursor:pointer;font-weight:700;padding:6px 10px;border-radius:6px;background:#e9f3ff}
+.answer {display:none;margin-top:10px;background:#eef9f0;padding:10px;border-radius:8px}
+input[type=checkbox] {display:none}
+input[type=checkbox]:checked ~ .answer {display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="quiz">
+    <h4>✅ 미니퀴즈 2</h4>
+    <p><strong>Q.</strong> 일반 VMQ 실리콘이 연료에 장기간 노출될 경우 주로 발생하는 현상은 무엇일까요?</p>
+    <ul>
+      <li>① 팽창 및 열화</li>
+      <li>② 경도 증가</li>
+      <li>③ 전기 절연성 저하</li>
+      <li>④ 마찰계수 증가</li>
+    </ul>
+    <input type="checkbox" id="t2">
+    <label class="toggle" for="t2">정답 보기</label>
+    <div class="answer">
+      <p><strong>정답:</strong> ① 팽창 및 열화<br>
+      <em>풀이:</em> VMQ는 내유성이 낮아 연료·오일 접촉 시 화학적 변화로 팽창·열화가 발생합니다.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
