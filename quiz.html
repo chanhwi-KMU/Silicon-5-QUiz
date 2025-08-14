@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>미니퀴즈</title>
+<style>
+  body{font-family:system-ui,pretendard,Arial,sans-serif;line-height:1.6;margin:0;background:#fff;color:#222}
+  .wrap{max-width:720px;margin:0 auto;padding:18px}
+  .quiz{background:#f7f7f9;padding:12px 14px;border-radius:10px;margin:14px 0;border:1px solid #eee}
+  .quiz h4{margin:0 0 6px}
+  .quiz ul{margin:6px 0 10px 18px}
+  .toggle{display:inline-block;cursor:pointer;font-weight:700;padding:6px 10px;border-radius:6px;background:#e9f3ff}
+  .answer{display:none;margin-top:10px;background:#eef9f0;padding:10px;border-radius:8px}
+  /* 체크박스 토글 (자바스크립트 없이 동작) */
+  input[type=checkbox]{display:none}
+  input[type=checkbox]:checked ~ .answer{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 미니퀴즈 1 -->
+  <div class="quiz" id="quiz1">
+    <h4>✅ 미니퀴즈 1</h4>
+    <p><strong>Q.</strong> 실리콘을 반복 마찰이 많은 부품에 적용했을 때 가장 먼저 우려되는 문제는 무엇일까요?</p>
+    <ul>
+      <li>① 표면 마모</li><li>② 전기 전도성 저하</li><li>③ 금형 제작 어려움</li><li>④ 내열성 저하</li>
+    </ul>
+    <input type="checkbox" id="t1"><label class="toggle" for="t1">정답 보기</label>
+    <div class="answer"><p><strong>정답:</strong> ① 표면 마모<br><em>풀이:</em> 실리콘은 내마모성이 낮아 반복 마찰 시 표면 손상이 빠르게 진행됩니다.</p></div>
+  </div>
+
+  <!-- 미니퀴즈 2 -->
+  <div class="quiz" id="quiz2">
+    <h4>✅ 미니퀴즈 2</h4>
+    <p><strong>Q.</strong> 일반 VMQ 실리콘이 연료에 장기간 노출될 경우 주로 발생하는 현상은 무엇일까요?</p>
+    <ul>
+      <li>① 팽창 및 열화</li><li>② 경도 증가</li><li>③ 전기 절연성 저하</li><li>④ 마찰계수 증가</li>
+    </ul>
+    <input type="checkbox" id="t2"><label class="toggle" for="t2">정답 보기</label>
+    <div class="answer"><p><strong>정답:</strong> ① 팽창 및 열화<br><em>풀이:</em> VMQ는 내유성이 낮아 연료·오일 접촉 시 화학적 변화로 팽창/열화가 발생합니다.</p></div>
+  </div>
+
+  <!-- 미니퀴즈 3 -->
+  <div class="quiz" id="quiz3">
+    <h4>✅ 미니퀴즈 3</h4>
+    <p><strong>Q.</strong> 나사 체결과 절단 공정이 모두 필요한 부품에 실리콘 대신 적합한 소재는 무엇일까요?</p>
+    <ul>
+      <li>① ABS</li><li>② VMQ 실리콘</li><li>③ NBR</li><li>④ 천연고무</li>
+    </ul>
+    <input type="checkbox" id="t3"><label class="toggle" for="t3">정답 보기</label>
+    <div class="answer"><p><strong>정답:</strong> ① ABS<br><em>풀이:</em> ABS는 기계 가공성이 뛰어나 정밀 작업에 적합합니다.</p></div>
+  </div>
+
+  <!-- 미니퀴즈 4 -->
+  <div class="quiz" id="quiz4">
+    <h4>✅ 미니퀴즈 4</h4>
+    <p><strong>Q.</strong> 일반 실리콘이 전자 부품에 바로 사용되기 어려운 이유는 무엇일까요?</p>
+    <ul>
+      <li>① 전기 절연성이 높음</li><li>② 내열성이 낮음</li><li>③ 내유성이 낮음</li><li>④ 가공성이 뛰어남</li>
+    </ul>
+    <input type="checkbox" id="t4"><label class="toggle" for="t4">정답 보기</label>
+    <div class="answer"><p><strong>정답:</strong> ① 전기 절연성이 높음<br><em>풀이:</em> 일반 실리콘은 절연체라 전도 용도는 충전제가 필요합니다.</p></div>
+  </div>
+
+  <!-- 미니퀴즈 5 -->
+  <div class="quiz" id="quiz5">
+    <h4>✅ 미니퀴즈 5</h4>
+    <p><strong>Q.</strong> 대량 생산 시 실리콘 대신 PP/ABS 같은 열가소성 수지를 선택하는 주된 이유는?</p>
+    <ul>
+      <li>① 금형 비용이 낮고 고속 사출 가능</li><li>② 내유성이 뛰어남</li><li>③ 전기 절연성이 낮음</li><li>④ 내마모성이 우수함</li>
+    </ul>
+    <input type="checkbox" id="t5"><label class="toggle" for="t5">정답 보기</label>
+    <div class="answer"><p><strong>정답:</strong> ① 금형 비용 저렴 + 고속 사출 가능<br><em>풀이:</em> PP/ABS는 금형비가 비교적 낮고 사이클 타임이 빨라 대량 생산에 유리합니다.</p></div>
+  </div>
+
+</div>
+</body>
+</html>
